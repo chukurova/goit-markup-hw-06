@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Homework6_Webstudio</title>
   </head>
   <body>
@@ -377,32 +378,44 @@
             <use href="images/icons.svg#icon-close-btn"></use>
           </svg>
         </button>
-        <h2 class="heading-modal-btn">Залиште свої дані, ми вам передзвонимо</h2>
+        <strong class="heading-modal-btn">Залиште свої дані, ми вам передзвонимо</strong>
         <form action=" " method="post">
           <ul>
             <li class="input-list list-style-none">
               <label for="name" class="modal-label">Ім'я</label>
+              <div class="input-wrapper">
               <input type="text" id="name" name="user_name" class="input-data" required autofocus>
-              <svg class="input-icon" width="12" height="12">
-                <use class="icon-img" href="images/icons.svg#icon-name"></use>
+              <svg class="icon-img" width="18" height="18">
+                <use href="images/icons.svg#icon-name"></use>
               </svg>
+              </div>
             </li>
             <li class="input-list list-style-none">
               <label for="phone" class="modal-label">Телефон</label>
-              <input type="tel" id="phone" name="user_phone" class="input-data" required autofocus>
+              <div class="input-wrapper">
+              <input type="tel" id="phone" name="user_phone" class="input-data" required>
+              <svg class="icon-img" width="18" height="18">
+                <use href="images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
             </li>
             <li class="input-list list-style-none">
               <label for="mail" class="modal-label">Пошта</label>
-              <input type="email" id="mail" name="user_email" class="input-data" required autofocus>
+              <div class="input-wrapper">
+              <input type="email" id="mail" name="user_email" class="input-data" required>
+              <svg class="icon-img" width="18" height="18">
+                <use href="images/icons.svg#icon-email"></use>
+              </svg>
+              </div>
             </li>
             <li class="input-list list-style-none">
               <label for="msg" class="modal-label">Коментар</label>
-              <textarea id="msg" name="user_message" class="input-data comment" autofocus placeholder="Введіть текст"></textarea>
+              <textarea id="msg" name="user_message" class="input-data comment" placeholder="Введіть текст"></textarea>
             </li>
           </ul>
           <div class="checkbox">
-            <input type="checkbox" name=" " value=" " checked class="terms-checked">
-            <p class="terms">Погоджуюся з розсилкою та приймаю <a href="" class="link-style-none terms-links"><span class="terms-link">Умови договору</span></a></p>
+            <input type="checkbox" name=" " value=" " class="terms-checked" required>
+            <p class="terms">Погоджуюся з розсилкою та приймаю <a href="" class="link-style-none terms-link">Умови договору</a></p>
           </div>
           <button type="submit" class="send-form-btn">Відправити</button>
         </form>
