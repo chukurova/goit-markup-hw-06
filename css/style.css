@@ -421,6 +421,59 @@ footer {
     width: 22px;
     height: 22px;
 }
+.footer-form {
+    width: 570px;
+    margin-left: 93px;
+}
+.newsletter-heading {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.newsletter-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newsletter-input {
+    width: 358px;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    background-color: var(--footer-color);
+    color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+}
+.newsletter-heading::placeholder {
+    
+}
+.newsletter-btn {
+    width: 200px;
+    padding: 10px 28px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-color);
+    background-color: var(--bright-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+}
+.telegram-icon {
+    fill: var(--main-color);
+}
 .portfolio {
     display: flex;
     padding-top: 94px;
